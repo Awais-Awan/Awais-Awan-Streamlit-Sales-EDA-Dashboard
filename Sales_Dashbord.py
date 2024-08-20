@@ -41,7 +41,7 @@ if fl is not None:
 else:
     try:
         # Fallback to a default file path if no file is uploaded
-        os.chdir(r'D:/Python/Data Analytics/05. Streamli-Sales-EDA-Dashboard')
+        #os.chdir(r'D:/Python/Data Analytics/05. Streamli-Sales-EDA-Dashboard')
         df = pd.read_excel(r'Superstore.xls')
         # st.write("Loaded default Superstore.xls")
         # st.write(df.head())
