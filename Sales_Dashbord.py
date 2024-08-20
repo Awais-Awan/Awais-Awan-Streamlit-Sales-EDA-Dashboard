@@ -90,9 +90,9 @@ elif not region and not city:
 elif states and city:
     filtered_df=df[(df['State'].isin(states) & df3["City"].isin(city))]
 elif region and city:
-    filtered_df= df3[(df['State'].isin(region) & df3["City"].isin(city))]
+    filtered_df= df3[(df['Region'].isin(region) & df3["City"].isin(city))]
 elif region and states:
-    filtered_df= df3[(df['State'].isin(region) & df3["City"].isin(states))]
+    filtered_df= df3[(df['Region'].isin(region) & df3["State"].isin(states))]
 elif city:
     filtered_df=df3[df['City'].isin(city)]
 else:
